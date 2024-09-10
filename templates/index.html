@@ -1,0 +1,81 @@
+{% load static %} 
+{% load bootstrap5 %} 
+{% bootstrap_css %} 
+{% bootstrap_javascript %}
+{% bootstrap_messages %}
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> {% block title %} {% endblock %}</title>
+        <link rel="icon" type="image/x-icon" href="{% static '/images/favicon.ico' %}">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Custom Meta Tags for Airborne Images-->
+        <!-- Description Meta Tag -->
+        <meta
+          name="description"
+          content="Discover breathtaking aerial photography and videos by Airborne Images. We specialize in capturing stunning perspectives with our professional drone photography services. Get ready to elevate your visuals to new heights."/>
+        <!-- Keywords Meta Tag -->
+        <meta
+          name="keywords"
+          content="airborne images, drone photography, aerial videos, professional drone services, stunning visuals, aerial perspectives, captivating images, aerial cinematography, aerial videography, event videos, real estate video, drone video"/>
+        <!-- Author Meta Tag -->
+        <meta name="author" content="Airborne Images"/>
+        <!-- Viewport Meta Tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="Airborne Images"/>
+        <meta
+          property="og:description"
+          content="Discover breathtaking aerial photography and videos by Airborne Images. We specialize in capturing stunning perspectives with our professional drone photography services. Get ready to elevate your visuals to new heights."/>
+        <meta
+          property="og:image"
+          content="https://photos.smugmug.com/photos/i-MXJpVJd/0/247972dd/X2/i-MXJpVJd-X2.jpg"/>
+        <meta property="og:url" content="https://www.tom-stout.com"/>
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content="Airborne Images"/>
+        <meta
+          name="twitter:description"
+          content="Discover breathtaking aerial photography and videos by Airborne Images. We specialize in capturing stunning perspectives with our professional drone photography services. Get ready to elevate your visuals to new heights."/>
+        <meta
+          name="twitter:image"
+          content="https://photos.smugmug.com/photos/i-MXJpVJd/0/247972dd/X2/i-MXJpVJd-X2.jpg"/>
+      <!-- End of Custom Meta Tags -->
+
+        <link rel="stylesheet" type="text/css" href="https://bootswatch.com/5/flatly/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="{% static 'styles/app.css' %}">
+        
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
+        <link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'fontawesomefree/css/brands.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        {% include 'navbar.html' %}
+
+        {% include 'components/to_the_top.html' %} 
+
+        {% for message in messages %}
+            {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+                <p id="message-timer" class="alert alert-success float-center text-center message-text"> 
+                    <i class="fa fa-check" aria-hidden="true"></i> &nbsp; {{message}}
+                </p>
+            {% endif %}
+        {% endfor %}
+
+        {% block content %}
+        
+        {% endblock %}
+        {% include 'footer.html' %}
+    </body>
+</html>

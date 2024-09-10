@@ -1,0 +1,118 @@
+{% extends 'index.html' %} 
+{% load static %} 
+
+{% block title %} 
+Promotional Materials 
+{% endblock %} 
+
+
+{% block content %}
+<body>
+    <div lc-helper="background" class="container-fluid py-5 mb-4 d-flex justify-content-center" 
+        style="background-image: url('https://photos.smugmug.com/Website/n-6x35Gw/Drone-Photography/i-Z8LkXkc/0/PwQmvNgRpXDKFPVc7SPCDQHxjtmW3km8v3pC2nKD/X2/Tony%20Stewart%20TAD-Edit-X2.jpg');
+                background-position: center;
+                background-size:cover;
+                background-repeat:no-repeat">
+        <div class="p-5 mb-4 lc-block col-xxl-7 col-lg-8 col-12" 
+            style=" backdrop-filter: blur(6px) saturate(102%);
+                -webkit-backdrop-filter: blur(6px) saturate(102%);
+                background-color: rgba(255, 255, 255, 0.45);
+                border-radius: 12px;
+                border: 1px solid rgba(209, 213, 219, 0.3);">
+            <div class="lc-block">
+                <div editable="rich">
+                    <h2 class="fw-bolder display-3">Drones & Marketing</h2>
+                </div>
+            </div>
+            <div class="lc-block col-md-8">
+                <div editable="rich">
+                    <p class="lead">Drones have the potential to revolutionize a company's marketing
+                        strategy by providing unique and engaging content that traditional
+                        methods cannot offer. With the ability to capture high-quality
+                        aerial footage and images, drones can showcase a company's
+                        products or services in a visually stunning way.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <br><br>
+        <hr class="style14 mb-5" />
+    
+    <div class="container py-5">
+        <h2 class="text-center text-primary fw-light">Showcase your event with a new perspective</h2>
+            <br>
+        <div class="row mb-4 align-items-center flex-lg-row-reverse">
+            <div class="col-md-6 col-xl-7 mb-4 mb-lg-0">
+                <div class="lc-block position-relative">
+                    <img class="img-fluid rounded shadow" 
+                        src=https://photos.smugmug.com/Website/n-6x35Gw/Drone-Photography/i-r3zcbP3/0/CMtWj6JqkDFV94MvB5cdQZSzKHcMSdjMhMbTnJbpL/L/Capps%202-Edit-L.jpg 
+                        sizes="(max-width: 3840px) 100vw, 3840px" width="3840" height="" 
+                        alt="Photo By Airborne Images">
+                    <a class="position-absolute top-50 start-50 translate-middle glightbox d-flex justify-content-center align-items-center" 
+                        href="https://photos.smugmug.com/Website/n-6x35Gw/Social-Media-Videos/i-FWfMk3K/0/Cws2FKhn85frxVnWWqSF9FFBjv95gz4c3jKCRTmtq/1920/Airborne%20Images-1920.mp4" target="blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" fill="currentColor" class="text-white" viewBox="0 0 16 16" lc-helper="svg-icon">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"></path></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-5">
+                <div class="lc-block mb-4">
+                    <div editable="rich" style="text-align: justify;">
+                        <p class="lead">Aerial imagery can be particularly beneficial for industries such as real estate,
+                            tourism, and events, where showcasing the location or venue from a bird's
+                            eye view can attract more customers. Drones can also be used to capture
+                            dynamic and eye-catching footage for social media marketing campaigns,
+                            creating excitement and engagement with the audience. Additionally, drones
+                            can provide valuable data and insights for market research, allowing
+                            companies to gather information on consumer behavior and preferences.
+                            Overall, incorporating drones into a company's marketing strategy can help
+                            increase brand visibility, attract new customers, and differentiate the
+                            company from competitors.</p>
+                    </div>
+                </div>
+                <div class="lc-block">
+                    <a class="btn btn-lg btn-primary" href="{% url 'contact' %}" role="button">Contact Tom!</a>
+                </div> 
+            </div> 
+        </div>
+    </div>
+
+        <hr class="style14 mb-5" />
+        <br>
+    <div class="container">
+        <h2 class="text-center text-primary fw-light">Social Media Content</h2>
+        <h4 class="wide fw-light text-primary"style="text-align: justify;">
+            Drones have revolutionized the way companies can showcase their products and services on social media platforms. 
+            With aerial shots and expansive views, drones can capture breathtaking images and videos that are sure to captivate 
+            audiences. This unique perspective can help businesses stand out from the competition and create visually stunning 
+            content that will grab the attention of potential customers. Additionally, drones can provide a more immersive experience 
+            for viewers, allowing them to see a different side of a company or product that they may not have otherwise seen. Overall, 
+            drones offer a new and exciting way for companies to engage with their audience and enhance their social media presence.
+        </h4>
+    </div>
+    <p class="text-muted text-center fw-lighter">
+        <span><i class="fa-solid fa-triangle-exclamation"></i></span>&nbsp; These videos have sound
+    </p>
+
+    {% include 'components/social_media_content.html' %}
+    
+        <hr/>
+        <br><br>
+    {% include 'components/social_media.html' %}
+        <br><br>
+
+    <div class="container">
+        <div>
+            <h1 class="text-center text-primary fw-lighter">Contact Airborne Images</h1>
+            <br>
+        </div>
+        <iframe width="640px" height="1000px" style="width: 100%; margin: auto;"
+            src="https://forms.office.com/Pages/ResponsePage.aspx?id=KfACGfQpFEmmG_15hDHK6f1iOhJ8-9ZGnCdYutBNGQ5UNDg2Uk0yWlJBU0EyNlA3UEFTUFMyU1RNQy4u&embed=true"
+            frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh"
+            allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+        <!-- <script type="text/javascript" src="https://form.jotform.com/jsform/232215374851050"></script> -->
+    </div>
+</body>
+{% endblock %}

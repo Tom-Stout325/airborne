@@ -1,0 +1,77 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block title %}
+Airborne Images
+{% endblock %}
+
+
+{% block content %}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/app.css' %}">
+</head>
+
+<body>
+    <section class="showcase">
+        <div class="video-container">
+            <!-- <video src="{% static 'images/Website.mp4' %}" autoplay muted loop></video> -->
+            <video
+                src="https://photos.smugmug.com/photos/i-G2dNJSJ/0/NWQ63PFFNMZT85qsRjTSCfR5fLb3HWDQzLhJRtGJW/1920/i-G2dNJSJ-1920.mp4"
+                autoplay muted loop></video>
+        </div>
+
+    </section>
+    <section class="section-home">
+        <h3>Unlock the Sky's Potential:</h3>
+        <br>
+        <h3>Elevate Your Business with Licensed and Insured Commercial Drone Services</h3>
+    </section>
+    <br><br>
+    {% include 'components/SafetyCard.html' %}
+
+    {% include 'components/card_group.html' %}
+
+    {% include 'components/drone_btn.html' %}
+    <br>
+
+    <br>
+    <div>
+        {% include 'components/carousel.html' %}
+    </div>
+    <br>
+
+    <br>
+    <div>
+        {% include 'components/video.html' %}
+    </div>
+    <br><br><br>
+    <hr class="style14 mb-5" />
+    <div>
+        <h2 class="text-center text-primary fw-lighter">Instagram: @airborne.images</h2>
+        <br>
+        {% include 'components/instagram.html' %}
+    </div>
+    <br>
+    <hr class="style14 mb-5" />
+    <br>
+    <div class="container">
+        <div>
+            <h1 class="text-center text-primary fw-lighter">Contact Airborne Images</h1>
+            <br>
+        </div>
+
+        <div>
+        </div>
+        <iframe width="640px" height="1000px" style="width: 100%; margin: auto;"
+            src="https://forms.office.com/Pages/ResponsePage.aspx?id=KfACGfQpFEmmG_15hDHK6f1iOhJ8-9ZGnCdYutBNGQ5UNDg2Uk0yWlJBU0EyNlA3UEFTUFMyU1RNQy4u&embed=true"
+            frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh"
+            allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+        <!-- <script type="text/javascript" src="https://form.jotform.com/jsform/232215374851050"></script> -->
+
+    </div>
+    <br><br><br>
+
+    <script src="{% static 'js/object-fit-videos.js' %}"></script>
+</body>
+{% endblock %}

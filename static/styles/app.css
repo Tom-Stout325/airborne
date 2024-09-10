@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ebeff5;
+}
+
+.section-home {
+  background-color: #282e34;
+  color: #ddd;
+  padding: 5rem;
+  text-align: center;
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    letter-spacing: 10px;
+  }
+  h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    color: white;
+    letter-spacing: 5px;
+  }
+}
+.showcase {
+  position: relative;
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.content {
+  z-index: 10;
+}
+
+@media (max-width: 568px) {
+  .section-home {
+    background-color: #282e34;
+    color: #ddd;
+    padding: 5rem;
+    height: 300px;
+    h3 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1rem;
+      font-weight: 200;
+      text-align: center;
+      color: white;
+      letter-spacing: 8px;
+    }
+  }
+}
+
+hr.style14 {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #000000, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #000000, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #000000, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #000000, #f0f0f0);
+}
+
+#panos {
+  padding: 0 1rem;
+  img {
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+  .rows {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .col {
+    flex: 100%;
+  }
+  .col img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+}
+
+#socials {
+  .row {
+    display: flex;
+    flex-direction: wrap;
+    padding: 0 30px;
+  }
+  .col {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  .col img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .col {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.wide {
+  text-align: justify;
+  letter-spacing: .6px;
+  line-height: 2;
+  font-weight: 200;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.text-box {
+  text-align: justify;
+  height: 300px;
+  width: 300px;
+  padding: 2rem;
+  font-weight: 300;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}

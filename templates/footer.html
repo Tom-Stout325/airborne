@@ -1,0 +1,39 @@
+{% load static %}
+
+<style>
+  .footer-divider {
+    width: 100%;
+    height: 1.5rem;
+    background-color: rgba(4, 146, 241, 0.1);
+    border: solid rgba(15, 32, 228, 0.15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(1, 101, 224, 0.1), inset 0 .125em .5em rgba(24, 1, 95, 0.15);
+  }
+</style>
+
+<body>
+
+  <div class="footer-divider mt-5"></div>
+    <footer>
+      <div class="row text-center">
+        <div class="col-sm-12 col-md-4">
+          <p class=" text-body-secondary"> &copy; <span class="mb-3 mb-md-0" id="year"></span> Airborne Images</p>
+          <p class=" text-body-secondary"> Powered by 12bytes</p>
+        </div>
+        <div class="col-sm-12 col-md-4 mt-2">
+          <a href="{% url 'home' %}"><img src="{% static 'images/ABN_IMG_LOGO_300.png'%}" width="200" alt="Airborne Images"></a>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <ul class="nav list-unstyled">
+            <li class="nav-item"><a href="{% url 'home' %}" class="nav-link text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="{% url 'gallery' %}" class="nav-link text-body-secondary">Gallery</a></li>
+            <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link text-body-secondary">Contact</a></li>
+            <li class="nav-item"><a href="" class="nav-link text-body-secondary">About</a></li>
+            <li class="nav-item"><a href="{% url 'login' %}" class="nav-link text-body-secondary">Sign In</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+ 
+  <script> document.querySelector("#year").textContent = new Date().getFullYear();</script>
+</body>

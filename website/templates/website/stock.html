@@ -1,0 +1,146 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block title %}
+Stock Photos and Video
+{% endblock %}
+
+
+{% block content %}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/lightbox.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/app.css' %}">
+</head>
+
+<body>
+    <section class="showcase">
+        <div class="video-container">
+            <!-- <video src="{% static 'images/Stock_Videos.mp4' %}" autoplay muted loop></video> -->
+            <video src="https://photos.smugmug.com/photos/i-2DFKrD7/0/Ncs7WpjZXw97FDdL6pjZm2NVHn7FDfs4gNfnNnrNd/1920/i-2DFKrD7-1920.mp4" autoplay muted loop></video>
+
+            
+        </div>
+    </section>
+
+    <div class="container wide">
+        <h2 class="text-center mt-5 mb-3">Stock Photo & Video by Airborne Images</h2>
+        <h4 class="fw-light text-primary" style="text-align: justify;">
+            Stock images are high-quality, professionally captured photographs and videos that are available
+            for licensing and use in various creative projects. These images offer an efficient and cost-effective way
+            to enhance your visual content, whether it's for websites, marketing materials, or presentations. Using
+            stock images allows
+            you to convey the right message and evoke specific emotions without the need for a custom photoshoot, saving
+            both time and resources. They provide versatility and variety, ensuring that you can find the perfect
+            visuals to
+            complement your brand's story and engage your audience effectively.</h4>
+        <br><br>
+        <h4 class="fw-light text-primary" style="text-align: justify;">
+            Using drone video for stock footage can add a unique and captivating
+            perspective to any project. Drones are able to capture stunning aerial shots
+            that can showcase vast landscapes, cityscapes, and dynamic movement in a way
+            that traditional cameras cannot. This type of footage is in high demand for a
+            variety of industries, including travel, real estate, and advertising. By
+            incorporating drone video into stock footage libraries, creators can provide
+            customers with visually striking content that helps elevate their projects to
+            the next level.
+        </h4>
+    </div>
+
+    <br><br><br>
+
+    <h1 class="text-center text-primary">Stock Gallery</h1>
+    <hr class="style14 w-50 mb-3 mt-5 mx-auto" />
+    <br><br>
+
+    <div class="container">
+        <div class="gallery">
+            <a href="https://photos.smugmug.com/photos/i-vWLC2nd/0/Mw4GfwLDjn2kg3hCf2nzTsCBtF4ttZDvMGdscGcWz/1920/i-vWLC2nd-1920.mp4" target="blank">
+                <img src="{% static 'images/CamelBack.png' %}" alt="Camelback Mountain" /></a>
+
+            <a href="https://photos.smugmug.com/photos/i-BBBw9v7/0/LbRhq5r9q64SpjFXsxg3Kv9BqgnWnchGqWLhc8pkf/X3/i-BBBw9v7-X3.jpg"
+                data-lightbox="Indianapolis City County Building" data-title="Indy CCB">
+                <img src="{% static 'images/Indy_CCB.png' %}" alt="Indianapolis City County Building" /></a>
+
+            <a href="https://photos.smugmug.com/photos/i-sdZMWL2/0/MQw7c8XwDG7cpqdrjs6tqPs8tdQ3VQTSG2zpwXsF8/X3/i-sdZMWL2-X3.jpg"
+                data-lightbox="Seattle" data-title="Seattle">
+                <img src="https://photos.smugmug.com/photos/i-sdZMWL2/0/MQw7c8XwDG7cpqdrjs6tqPs8tdQ3VQTSG2zpwXsF8/X3/i-sdZMWL2-X3.jpg" alt="Seattle" /></a>
+
+            <a href="https://photos.smugmug.com/photos/i-BDcRkMM/0/KDRPr3wm7CRsppdH3HBBJcjS2Nxn2Vx28LQHqwHt7/1920/i-BDcRkMM-1920.mp4" target="blank">
+                    <img src="{% static 'images/DeathValley.png' %}" alt="California Beach" /></a>
+
+            <!-- ***********************  -->
+
+            <a href="https://photos.smugmug.com/Website/n-6x35Gw/Drone-Photography/i-vZRwt2q/0/CgZWLNt5cPb9TbLPqCVPqjnzmjZPM93wBvPCCsPb7/X3/Geist%20Pano-X3.jpg" data-lightbox="Fishers, IN" data-title="Fishers, IN">
+                <img src="https://photos.smugmug.com/Website/n-6x35Gw/Drone-Photography/i-vZRwt2q/0/CgZWLNt5cPb9TbLPqCVPqjnzmjZPM93wBvPCCsPb7/X3/Geist%20Pano-X3.jpg" alt="Fishers" /></a>
+
+            <a href="https://photos.smugmug.com/photos/i-D4347d4/0/Kx5Xgf8xRXCfWtmxJ2WvTMNXvrKqQbrtXBxQD85KT/1920/i-D4347d4-1920.mp4" target="blank">
+                <img src="{% static 'images/Beach_1.png' %}" alt="California Beach" /></a>
+
+            <a href="https://photos.smugmug.com/Galleries/Drone/i-ShcmSRH/0/13b1deac/X3/Arch-X3.jpg" data-lightbox="St Louis" data-title="St Louis">
+                <img src="https://photos.smugmug.com/Galleries/Drone/i-ShcmSRH/0/13b1deac/X3/Arch-X3.jpg" alt="St Louis" /></a>
+
+            <a href="https://photos.smugmug.com/Galleries/Drone/i-hhLk96D/0/13d24afa/X3/Bolinas%20CA-X3.png" data-lightbox="Sunset" data-title="Drone Photos">
+                <img src="https://photos.smugmug.com/Galleries/Drone/i-hhLk96D/0/13d24afa/X3/Bolinas%20CA-X3.png" alt="California" /></a>
+
+            <!-- ***********************  -->
+
+            <a href="https://photos.smugmug.com/photos/i-8kfS2Jx/0/LKQtM3CFvbfkxt5KzhfvK4FQCVmL4rnBCDfh7TzN4/1920/i-8kfS2Jx-1920.mp4" target="blank">
+                <img src="{% static 'images/Penn.png' %}" alt="Pennsylvania" /></a>
+
+            <a href="https://photos.smugmug.com/photos/i-N8dq6pF/0/Khx8HxCz5TwnhSGMJsLrjxwJWkLsdx2t352zbhxh2/X3/i-N8dq6pF-X3.jpg" data-lightbox="Blue Ridge Mountains" data-title="Blue Ridge Mountains">
+                <img src="https://photos.smugmug.com/photos/i-N8dq6pF/0/Khx8HxCz5TwnhSGMJsLrjxwJWkLsdx2t352zbhxh2/X3/i-N8dq6pF-X3.jpg" alt="Blue Ridge Mountains" /></a>
+
+            <a href="https://photos.smugmug.com/Galleries/Drone/i-9nwTjV4/0/4c39ec7a/X3/Bristol%20TN-X3.png" data-lightbox="Eastern Tennessee" data-title="Eastern Tennessee">
+                <img src="https://photos.smugmug.com/Galleries/Drone/i-9nwTjV4/0/4c39ec7a/X3/Bristol%20TN-X3.png" alt="Eastern Tennesee" /></a>
+
+            <a href="https://photos.smugmug.com/Galleries/Drone/i-jrRwh6G/0/132968fb/X3/Lighthouse-X3.jpg" data-lightbox="Portsmouth Harbor" data-title="Portsmouth Harbor, NH">
+                <img src="https://photos.smugmug.com/Galleries/Drone/i-jrRwh6G/0/132968fb/X3/Lighthouse-X3.jpg" alt="Portsmouth Harbor, NH" /></a>
+
+            <!-- ***********************  -->
+
+            <a href="https://photos.smugmug.com/photos/i-B7fd4Ld/0/Kp56fQKk7jP2WdHJJk3xbdT39mBSN22tgh6z5QrmH/X3/i-B7fd4Ld-X3.jpg" data-lightbox="Crown Point, IN" data-title="Crown Point, IN">
+                <img src="https://photos.smugmug.com/photos/i-B7fd4Ld/0/Kp56fQKk7jP2WdHJJk3xbdT39mBSN22tgh6z5QrmH/X3/i-B7fd4Ld-X3.jpg" alt="Crown Point, IN" /></a>
+
+            <a href="https://photos.smugmug.com/photos/i-hvBRTWB/0/KdWsdNf5qVXtFV74tbLGGCChRK5wQZGxzjLNfGD8X/X3/i-hvBRTWB-X3.jpg" data-lightbox="Mount Ranier" data-title="Mount Ranier, Washington">
+                <img src="https://photos.smugmug.com/photos/i-hvBRTWB/0/KdWsdNf5qVXtFV74tbLGGCChRK5wQZGxzjLNfGD8X/X3/i-hvBRTWB-X3.jpg" alt="Mount Ranier, Washington" /></a>
+
+            <a href="https://photos.smugmug.com/photos/i-TvCfLsg/0/KSVfGzW4NkZmK54s99sVZNHCS5DvDWkTqQGpbmTt5/1920/i-TvCfLsg-1920.mp4" target="blank">
+                <img src="https://photos.smugmug.com/photos/i-xNbt5gZ/0/NVwMmXsbHrfZQ3mW3qBXVqwqF6Dghk6dnQbMTnrnn/X3/i-xNbt5gZ-X3.png" alt="Shipyards" /></a>
+
+                <a href="https://photos.smugmug.com/photos/i-GhhWwJd/0/K3VdrWQ5cKGMqqfGVN46RmFbfpBbmBRXHhpkb84dw/1920/i-GhhWwJd-1920.mp4" target="blank">
+                    <img src="https://photos.smugmug.com/photos/i-XTf83R7/0/Lw6RjHkdjRwDB7JtpPwkkqVrBNFqBcThPsv4jKpMP/X3/i-XTf83R7-X3.png" alt="Shipyards" /></a>
+
+
+        </div>
+        <br><br><br>
+    </div>
+
+    <br><br><br>
+    </div>
+    <br><br>
+
+
+    <hr>
+
+    <br><br>
+
+    <div class="container">
+        <div>
+            <h1 class="text-center text-primary fw-lighter">Contact Airborne Images</h1>
+            <br>
+        </div>
+        <iframe width="640px" height="1000px" style="width: 100%; margin: auto;"
+            src="https://forms.office.com/Pages/ResponsePage.aspx?id=KfACGfQpFEmmG_15hDHK6f1iOhJ8-9ZGnCdYutBNGQ5UNDg2Uk0yWlJBU0EyNlA3UEFTUFMyU1RNQy4u&embed=true"
+            frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh"
+            allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+        <!-- <script type="text/javascript" src="https://form.jotform.com/jsform/232215374851050"></script> -->
+    </div>
+
+
+    <script src="{% static 'js/lightbox-plus-jquery.js' %}"></script>
+    <script src="{% static 'js/object-fit-videos.js' %}"></script>
+    <script src="{% static 'js/app.js' %}"></script>
+</body>
+
+{% endblock %}

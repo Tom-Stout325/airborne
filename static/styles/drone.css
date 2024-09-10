@@ -1,0 +1,136 @@
+#hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+#hero video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  object-fit: cover;
+}
+
+#hero .caption {
+  position: relative;
+  z-index: 20;
+  text-align: center;
+  color: #ffffff;
+  
+}
+
+#overlay-img {
+  opacity: .5;
+  width: 500px;
+}
+#hero .caption h1{
+  font-family: "Montserrat", sans-serif;
+  color: lightslategray;
+  opacity: 0.5;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-bottom: 0.5rem;
+
+}
+
+#hero .caption h2 {
+  font-family: "Montserrat", sans-serif;
+  color: lightslategray;
+  opacity: 0.5;
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.section-drone {
+  font-family: "Montserrat", sans-serif;
+  color: #ddd;
+  background-color: #282e34;
+  height: 300px;
+  padding: 5rem;
+}
+
+.section-drone h1 {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  font-weight: 100;
+}
+
+
+.drone-gallery {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none !important;
+}
+
+.drone-gallery li {
+  flex-basis: 350px; /* width: 350px; */
+  list-style-type: none;
+}
+
+.drone-gallery li img {
+  object-fit: cover;
+  width: 350px;
+  height: 350px;
+  vertical-align: middle;
+  border-radius: 5px;
+  list-style-type: none;
+}
+
+.drone-gallery ul {
+  list-style-type: none;
+  
+}
+
+
+@media screen and (min-width: 768px) {
+  #hero .caption h1 {
+    font-size: 2.5rem;
+  }
+
+  #hero .caption h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #hero .caption h1 {
+    font-size: 3rem;
+  }
+
+  #hero .caption h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #hero .caption h1 {
+    font-size: 4rem;
+  }
+
+  #hero .caption h2 {
+    font-size: 2.5rem;
+  }
+}
