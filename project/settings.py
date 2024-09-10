@@ -75,17 +75,23 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'project.wsgi.application'
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': env('DB_ENGINE'),
+#         'NAME': env('DB_NAME'),
+#         'USER': env('DB_USER'), 
+#         'PASSWORD': env('DB_PASSWORD'),
+#         'HOST': env('DB_HOST'),
+#         'PORT': '5432',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': env('DB_ENGINE'),
-        'NAME': env('DB_NAME'),
-        'USER': env('DB_USER'), 
-        'PASSWORD': env('DB_PASSWORD'),
-        'HOST': env('DB_HOST'),
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 AUTH_PASSWORD_VALIDATORS = [
     {
