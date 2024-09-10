@@ -149,7 +149,6 @@ SESSION_COOKIE_SECURE = True
 
 SECURE_SSL_REDIRECT = True
 
-
 JAZZMIN_SETTINGS = {
     'site_title': "App",
     'site_header': "images/logo1.png",
