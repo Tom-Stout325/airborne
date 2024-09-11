@@ -1,68 +1,66 @@
 {% load static %}
-{% load bootstrap5 %}
-{% bootstrap_css %}
-{% bootstrap_javascript %}
-{% bootstrap_messages %}
 
 <head>
   <link rel="stylesheet" type="text/css" href="{% static 'styles/navbar.css' %}">
-
-
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg bg-primary fixed-top" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="{% url 'home' %}">
-        <img style="margin-left: 5rem; margin-right: 3rem; height: 75px;" src="{% static 'images/prop_500.png' %}"
-          alt="Airborne Images" class="App-logo" />
-        <span class="fs-3 fw-lighter"> Airborne Images</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarColor01">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="{% url 'home' %}">Home
-              <span class="visually-hidden">(current)</span>
-            </a>
-          </li>
-          &nbsp;&nbsp;
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
-          </li>
+<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{% url 'home' %}">
+      <img style="margin-left: 5rem; margin-right: 3rem; height: 75px;" src="{% static 'images/prop_500.png' %}"
+          alt="Airborne Images" class="App-logo"/><span class="fs-3 fw-lighter"> Airborne Images</span>
+    </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-          &nbsp;&nbsp;
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item">
+        <a class="nav-link active" href="{% url 'home' %}">Home
+          <span class="visually-hidden">(current)</span>
+        </a>
+      </li>
+      &nbsp;&nbsp;
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+      </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'promo' %}">Promotional Content</a>
-          </li>
+      &nbsp;&nbsp;
 
-          &nbsp;&nbsp;
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'promo' %}">Promotional Content</a>
+      </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'stock' %}">Stock Photo/Videos</a>
-          </li>
+      &nbsp;&nbsp;
 
-          &nbsp;&nbsp;
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'stock' %}">Stock Photo/Videos</a>
+      </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'about' %}">About</a>
-          </li>
-          &nbsp;
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
-          </li>
+      &nbsp;&nbsp;
 
-          &nbsp;&nbsp;
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'about' %}">About</a>
+      </li>
+      &nbsp;
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+      </li>
 
-        </ul>
-        <ul class="navbar-nav me-auto">
-          <a class="nav-link fs-5 fw-lighter" href="https://www.tom-stout.com" target="_blank"> <span
-              class="fs-6 text-success text-muted">by</span> Tom Stout Photography</a>
-        </ul>
-      </div>
-    </div>
-  </nav>
+      &nbsp;&nbsp;
 
-</body>
+    </ul>
+    <ul class="navbar-nav me-auto">
+      <a class="nav-link fs-5 fw-lighter" href="https://www.tom-stout.com" target="_blank"> <span
+          class="fs-6 text-success text-muted">by</span> Tom Stout Photography</a>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+
+
+
+
