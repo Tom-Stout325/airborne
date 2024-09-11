@@ -16,7 +16,7 @@ SECRET_KEY = os.environ.get(
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pacific-albatross-wpag8lz9tbnxlkvedzi0qy3w.herokudns.com', '127.0.0.1', 'airborne-images.net']
     
 INSTALLED_APPS = [
     'jazzmin',
