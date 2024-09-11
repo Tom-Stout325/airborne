@@ -14,7 +14,7 @@ SECRET_KEY = os.environ.get(
     default=secrets.token_urlsafe(nbytes=64),
 )
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['airborne-bb31fa54b518.herokuapp.com', '127.0.0.1', 'airborne-images.net']
     
