@@ -143,11 +143,11 @@ LOGIN_URL = 'login'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-CSRF_COOKIE_SECURE = True
+# CSRF_COOKIE_SECURE = True
 
-SESSION_COOKIE_SECURE = True
+# SESSION_COOKIE_SECURE = True
 
-SECURE_SSL_REDIRECT = True
+# SECURE_SSL_REDIRECT = True
 
 JAZZMIN_SETTINGS = {
     'site_title': "App",
