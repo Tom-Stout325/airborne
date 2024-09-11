@@ -121,6 +121,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 #_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-  CUSTOM SETTINGS
+
+
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
 CRISPY_TEMPLATE_PACK = "bootstrap5"
@@ -152,6 +154,14 @@ SECURE_SSL_REDIRECT = True
 WHITENOISE_USE_FINDERS = True
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+
+BOOTSTRAP5 = {
+    "error_css_class": "bootstrap5-error",
+    "required_css_class": "bootstrap5-required",
+    "javascript_in_head": True,
+}
+
+
 
 JAZZMIN_SETTINGS = {
     'site_title': "App",
