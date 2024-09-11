@@ -151,7 +151,7 @@ SECURE_SSL_REDIRECT = True
 
 WHITENOISE_USE_FINDERS = True
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 JAZZMIN_SETTINGS = {
     'site_title': "App",
