@@ -143,11 +143,15 @@ LOGIN_URL = 'login'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-# CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 
-# SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
 
-# SECURE_SSL_REDIRECT = True
+SECURE_SSL_REDIRECT = True
+
+WHITENOISE_USE_FINDERS = True
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 JAZZMIN_SETTINGS = {
     'site_title': "App",
@@ -173,15 +177,10 @@ JAZZMIN_UI_TWEAKS = {
     "dark_mode_theme": "darkly",
 }
 
-#=-=-=-=-=-=-=-=-=-=-=-=-=->  PRODUCTION SETTINGS:  Remove all # below
-
-# WHITENOISE_USE_FINDERS = True
-
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-#CSRF_COOKIE_SECURE = True
-
-#SESSION_COOKIE_SECURE = True
 
 
-# Remove the '#' to require SSL connections Leave it in for localhost
-#SECURE_SSL_REDIRECT = True
+
+
+
+
+
