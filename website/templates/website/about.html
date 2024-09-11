@@ -1,21 +1,19 @@
-{% extends 'index.html' %} 
-{% load static %} 
+{% extends 'index.html' %}
+{% load static %}
 
-{% block title %} 
-About Airborne Images 
+{% block title %}
+About
 {% endblock %}
-    
+
 {% block content %}
 
-<div
-  class="container"
-  style="background: cadetblue; border-radius: 0 0 20px 20px">
-  <div class="row p-5">
-    <div class="col-sm-12 col-md-6">
-      <img
-        src="{% static 'images/Headshot.jpg' %}"
-        alt="Tom Stout Photography"
-        style="
+<body>
+  <br>
+  <br>
+  <div class="container" style="background: cadetblue; border-radius: 0 0 20px 20px">
+    <div class="row p-5">
+      <div class="col-sm-12 col-md-6">
+        <img src="{% static 'images/Headshot.jpg' %}" alt="Tom Stout Photography" style="
           display: block;
           margin-left: auto;
           margin-right: auto;
@@ -25,59 +23,62 @@ About Airborne Images
           padding: 2px;
           box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
             rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-        "
-      />
-    </div>
+        " />
+      </div>
 
-    <div class="col-sm-12 col-md-6">
-      {% include 'components/img_container.html' %}
+      <div class="col-sm-12 col-md-6">
+        {% include 'components/img_container.html' %}
+      </div>
     </div>
   </div>
-</div>
-<br /><br />
-<div>{% include 'components/banner.html' %}</div>
+  <br /><br />
+  <div>{% include 'components/banner.html' %}</div>
 
-<div class="container mx-auto my-5 w-75 text-center">
-  <h3 class="fw-normal fs-2">Airborne Images</h3>
-  <p class="fs-4 text-primary">
-    Welcome to my drone photography website, where I combine over two decades
-    of experience in professional photography with the cutting-edge technology
-    of drone aerial imagery. As an FAA licensed drone pilot, I am able to
-    capture stunning aerial shots that were once only possible with
-    helicopters or planes. Drone photography services offer a unique
-    perspective and can showcase your property, event, or project in a way that
-    traditional photography cannot. Whether you need stunning aerial footage for
-    real estate listings, event coverage, or marketing materials, I have the
-    skills and expertise to deliver high-quality and captivating images and video. Contact
-    me today to learn more about how drone photography can elevate your visuals
-    and make a lasting impression.
-  </p>
-  <p class="fs-4 text-primary">
-    My equipment is the latest technology that utilize state of the art safety features, precision control, and amazing
-    quality.  You will see my work regularly on Fox and FS1 where I am the drone pilot for the National Hot Rod Association,
-    providing areial video for live television broadcasts for each of their races.  When I'm not filming the fastest cars 
-    on the planet I enjoy creating stunning content for everything from websites to walls!
-  </p>
-</div>
+  <div class="container mx-auto my-5 w-75 text-center">
+    <h3 class="fw-normal fs-2">Airborne Images</h3>
+    <p class="fs-4 text-primary">
+      Welcome to my drone photography website, where I combine over two decades
+      of experience in professional photography with the cutting-edge technology
+      of drone aerial imagery. As an FAA licensed drone pilot, I am able to
+      capture stunning aerial shots that were once only possible with
+      helicopters or planes. Drone photography services offer a unique
+      perspective and can showcase your property, event, or project in a way that
+      traditional photography cannot. Whether you need stunning aerial footage for
+      real estate listings, event coverage, or marketing materials, I have the
+      skills and expertise to deliver high-quality and captivating images and video. Contact
+      me today to learn more about how drone photography can elevate your visuals
+      and make a lasting impression.
+    </p>
+    <p class="fs-4 text-primary">
+      My equipment is the latest technology that utilize state of the art safety features, precision control, and
+      amazing
+      quality. You will see my work regularly on Fox and FS1 where I am the drone pilot for the National Hot Rod
+      Association,
+      providing areial video for live television broadcasts for each of their races. When I'm not filming the fastest
+      cars
+      on the planet I enjoy creating stunning content for everything from websites to walls!
+    </p>
+  </div>
 
-{% include 'components/hero_1.html' %}
+  {% include 'components/hero_1.html' %}
 
-<br><br>
-<div>
-  {% include 'components/social_media.html' %}
-</div>
+  <br><br>
+  <div>
+    {% include 'components/social_media.html' %}
+  </div>
 
-<br><br>
+  <br><br>
 
-<div class="container">
+  <div class="container">
     <div>
-        <h1 class="text-center">Contact Airborne Images</h1>
-        <br>
+      <h1 class="text-center">Contact Airborne Images</h1>
+      <br>
     </div>
     <iframe width="640px" height="1000px" style="width: 100%; margin: auto;"
-        src="https://forms.office.com/Pages/ResponsePage.aspx?id=KfACGfQpFEmmG_15hDHK6f1iOhJ8-9ZGnCdYutBNGQ5UNDg2Uk0yWlJBU0EyNlA3UEFTUFMyU1RNQy4u&embed=true"
-        frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh"
-        allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+      src="https://forms.office.com/Pages/ResponsePage.aspx?id=KfACGfQpFEmmG_15hDHK6f1iOhJ8-9ZGnCdYutBNGQ5UNDg2Uk0yWlJBU0EyNlA3UEFTUFMyU1RNQy4u&embed=true"
+      frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh"
+      allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
     <!-- <script type="text/javascript" src="https://form.jotform.com/jsform/232215374851050"></script> -->
-</div>
+  </div>
+</body>
 {% endblock %}
